@@ -1,6 +1,5 @@
 # Golang learning
-
-    This project stand for whom gonna starting learn Golang like me. the topic will start at beginner till advances. the project will periodically update depend on me deep learning and see something that useful I will pull it to this course.
+This project stand for whom gonna starting learn Golang like me. the topic will start at beginner till advances. the project will periodically update depend on me deep learning and see something that useful I will pull it to this course.
 
 ## Topics of this learning
 
