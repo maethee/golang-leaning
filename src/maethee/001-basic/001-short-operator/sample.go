@@ -2,14 +2,21 @@ package main
 
 import "fmt"
 
-//try to declare each value (int,bool,string) and let see value and type
 func main() {
-	a := 42
-	b := "Jame bond"
-	c := true
+	 name1 := "begin code"
+	 fmt.Printf("%T : %v\n", name1, name1)
 
-	fmt.Println(a, b, c)
+	 age := 50
+	 fmt.Printf("%T : %v\n", age, age)
 
-	s := fmt.Sprintf("%v\t%v\t\t%v", a, b, c)
-	fmt.Println(s)
+	 age = 40
+	 fmt.Printf("%T : %v\n", age, age)
+
+	 age2 := 30
+	 fmt.Printf("%T : %v\n", age2, age2)
+
+	 x, y := "string" , 66
+	 fmt.Printf("%T : %v\n", x, x)
+	 fmt.Printf("%T : %v\n", y, y)
+
 }

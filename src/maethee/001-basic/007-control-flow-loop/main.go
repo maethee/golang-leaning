@@ -18,32 +18,32 @@ func ControlFlowLoop() {
 
 	// print unicode
 	// reference: https://golang.org/pkg/fmt/
-	for j := 1; j <= 100; j++ {
+	for j := 1; j <= 100; {
 		fmt.Printf("%#U\n", j)
+		j++;
 	}
+
 
 	//while loop
 	for {
 		fmt.Println("Loop")
-		break
+		break;
 	}
 
-	for n := 0; n <= 5; n++ {
+	for n := 0; n <= 4; n++ {
 		if n%2 == 0 {
 			continue
 		}
+
+		fmt.Println(n)
 
 		//break in switch
 		switch n {
 		case 5: // skip space
 			fmt.Printf("break in loop %d\n", n)
 			break
-		case '\n': // break at newline
-			break
 		default:
 			fmt.Printf("%c\n", n)
 		}
-
-		fmt.Println(n)
 	}
 }

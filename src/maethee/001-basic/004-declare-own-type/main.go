@@ -5,11 +5,13 @@ import (
 )
 
 func main() {
-	ConversionTypeToAnather()
+	ConversionTypeToOther()
 }
 
 // Can create own type
 type MyOwn int
+
+type MyOwnTwo MyOwn
 
 // Conversion certain type to anather type
 var ConverA int
@@ -21,13 +23,19 @@ var ConverC string
 func ConversionTypeToOther() {
 	ConverA = 40
 	ConverB = 50
+	var x MyOwnTwo = 60
+	var y MyOwn = 60
+
+	y = MyOwn(x)
 
 	// we can convert to underlying type
 	// ConverC = "test"
 	fmt.Printf("%v\t%T\n", ConverA, ConverA)
 	fmt.Printf("%v\t%T\n", ConverB, ConverB)
-}
+	fmt.Printf("%v\t%T\n", x, x)
+	fmt.Printf("%v\t%T\n", y, y)
 
+}
 
 //Notes deep in each integer type
 
@@ -35,7 +43,7 @@ func ConversionTypeToOther() {
 // uint8       the set of all unsigned  8-bit integers (0 to 255)
 // uint16      the set of all unsigned 16-bit integers (0 to 65535)
 // uint32      the set of all unsigned 32-bit integers (0 to 4294967295)
-// uint64      the set of all unsigned 64-bit integers (0 to 18446744073709551615)
+// uint64      the set of all unsigned 64-bit integers (0 to 18446744073709551615) 18446744073709552000
 
 // int8        the set of all signed  8-bit integers (-128 to 127)
 // int16       the set of all signed 16-bit integers (-32768 to 32767)

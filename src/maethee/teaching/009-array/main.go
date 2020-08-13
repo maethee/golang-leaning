@@ -1,4 +1,4 @@
- package main
+package main
 
 import "fmt"
 
@@ -86,5 +86,3 @@ func SampleArray() {
 	dimension := [][]string{g, h}
 	fmt.Println(dimension)
 }
-
-

@@ -44,7 +44,7 @@ func ConditionStatement() {
 	case (2 == 2):
 		fmt.Println("case 2 == 2")
 		//tranfer control to next case
-		
+
 		fallthrough
 	case false:
 		fmt.Println("case 2 == 3")
@@ -53,7 +53,7 @@ func ConditionStatement() {
 	default:
 		fmt.Println("default")
 	}
-	
+
 	// you can push func to switch condition
 	switch conSwitch(4) {
 	case conSwitch(1), conSwitch(2), conSwitch(3):

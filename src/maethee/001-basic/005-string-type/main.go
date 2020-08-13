@@ -5,10 +5,10 @@ import (
 )
 
 func main() {
-	ConversionBinary()
+	StringType()
 }
 
-func ConversionBinary() {
+func StringType() {
 	s := `"Hello 
 	
 	world"`
@@ -21,9 +21,8 @@ func ConversionBinary() {
 	fmt.Printf("%T\n", bs)
 	//each array is ASCII code
 
+	fmt.Printf("%v\n", s[0])
+
 	//conversion to binary, hex , Unicode 8
-	c := "H"
-	cByte := []byte(c)
-	fmt.Printf("%#x\n", c)
-	fmt.Printf("%#U", cByte)
+	uint8 b
 }
